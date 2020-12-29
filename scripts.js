@@ -6,8 +6,8 @@ $('#button02').click(() => {
     $('#button01').text('Yeah');
  });
 
- $('#button03').click(() => {
-    $('#button01').css('background-color', 'blue');
-    $('#button02').css('background-color', 'yellow');
-    $('#button03').css('background-color', 'red');
- });
+let colorValue = $('#color').val();
+
+$('#button03').click(() => {
+    $('#button01, #button02, #button03').css('background-color', colorValue);
+});
